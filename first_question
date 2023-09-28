@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#print strings on each line
+echo "one"
+echo "two"
+echo "three"
+echo "four"
+echo "five"
+#create a text file with today's date
+filename=$(date)-file.txt
+echo "file created: $filename"
+echo "one\ntwo\nthree\nfour\nfive" > "$filename"
