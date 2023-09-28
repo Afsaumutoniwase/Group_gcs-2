@@ -8,4 +8,8 @@ echo "five"
 #create a text file with today's date
 filename=$(date)-file.txt
 echo "file created: $filename"
-echo "one\n two\n three\n four\n five" > "$filename"
+echo "one" > "$filename"
+echo "two" > "$filename"
+echo "three" > "$filename"
+echo "four" > "$filename"
+echo "five" > "$filename"
