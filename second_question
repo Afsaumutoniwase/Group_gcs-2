@@ -1,0 +1,12 @@
+#!/bin/bash
+#script to show random numbers
+first_random=$((1 + RANDOM % 1000))
+second_random=$((1 + RANDOM % 20000))
+sqrt1=$(echo "sqrt($first_random)" | bc)
+sqrt2=$(echo "sqrt($second_random)" | bc)
+sum=$(echo "$sqrt1 + $sqrt2" | bc)
+echo "The first random number generated is: $first_random"
+echo "The square root is: $sqrt1"
+echo "The second random number generated is: $second_random"
+echo "The square root is: $sqrt2"
+echo "The sum of their square roots is: $sum"
