@@ -1,0 +1,11 @@
+#!/bin/bash
+#script to ask for path
+echo "Enter the path: "
+read path
+if [ -d "$path" ] 
+then
+echo "the path is a directory"
+ls -al "$path"
+else
+echo "the given path is not a directory"
+fi
