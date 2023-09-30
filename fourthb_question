@@ -1,0 +1,9 @@
+#!/bin/bash
+#script to create folders
+filename="foldernames"
+echo $'movies\nmusic\nsongs\npictures' >"$filename"
+while IFS= read -r foldernames
+do
+mkdir "$foldernames"
+echo "folder '$foldername' created"
+done < "foldernames" 
