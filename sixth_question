@@ -3,7 +3,9 @@
 filename="names"
 echo $'Nicholas\nAfsa\nDavis\nMaalim' >"$filename"
 filename2="message"
-echo "Happy New Year Recipeints_Name!\nMay the coming year be full of grand adventures and\nopportunities." >"$filename2"
+echo "Happy New Year Recipeints_Name!
+May the coming year be full of grand adventures and
+opportunities." >"$filename2"
 while IFS= read -r name
 do
     sed "s/Recipeints_Name/$name/g" message > "$name.txt"
